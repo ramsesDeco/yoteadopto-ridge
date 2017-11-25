@@ -8,6 +8,53 @@
 <link rel="stylesheet" href="./styles/reset.css">
 <link rel="stylesheet" href="./styles/fonts.css">
 <style>
+
+  @font-face {
+    font-family: nunito;
+    src:  url('./fonts/nunito-light.eot');
+    src:  url('./fonts/nunito-light.eot') format('embedded-opentype'),
+      url('./fonts/nunito-light.ttf') format('truetype'),
+      url('./fonts/nunito-light.woff') format('woff'),
+      url('./fonts/nunito-light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: maaxRounded;
+    src:  url('./fonts/maax-rounded.eot');
+    src:  url('./fonts/maax-rounded.eot') format('embedded-opentype'),
+      url('./fonts/maax-rounded.ttf') format('truetype'),
+      url('./fonts/maax-rounded.woff') format('woff'),
+      url('./fonts/maax-rounded.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: maaxRounded;
+    src:  url('./fonts/maax-rounded-bold.eot');
+    src:  url('./fonts/maax-rounded-bold.eot') format('embedded-opentype'),
+      url('./fonts/maax-rounded-bold.ttf') format('truetype'),
+      url('./fonts/maax-rounded-bold.woff') format('woff'),
+      url('./fonts/maax-rounded-bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  * {
+    font-family: nunito;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: maaxRounded;
+    font-weight: bold;
+  }
+
+  p{
+    line-height: 1.3;
+  }
+
   body{
     font-size: 16px;
   }
@@ -56,6 +103,38 @@
     font-size: 3em;
   }
 
+  .aboutUs{
+    background-color: #f06252;
+    padding: 4em;
+  }
+
+  .aboutUs-containerImg{
+    text-align: center;
+  }
+
+  .aboutUs-img{
+    position: relative;
+  }
+
+  .aboutUs-isologo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .aboutUs-title{
+    color: #553457;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.7em 0 0.3em;
+  }
+
+  .aboutUs-desc{
+    color: #fff;
+  }
+
   </style>
 <body>
   <header >
@@ -94,9 +173,24 @@
     <i class="home-down yta yta-slide_icon-up-down"></i>
     </section>
 
-    <section >
-      <h2>¿Qué es Yo Te Adopto?</h2>
-      <p>Texto sobre Yo Te Adopto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore id ipsam voluptatibus, nihil
+    <section class="aboutUs">
+      <div class="aboutUs-containerImg">
+        <picture class="aboutUs-img">
+          <img 
+            srcset="./img/aboutus-img_1x.png,
+            ./img/aboutus-img_2x.png 2x,
+            ./img/aboutus-img_3x.png 3x,
+            "
+            src="./img/aboutus-img_2x.png"
+            alt=""
+          >
+          <svg class="aboutUs-isologo">
+            <image xlink:href="./img/isologo.svg" width="100%" height="100%" />
+          </svg>
+        </picture> 
+      </div>
+      <h2 class="aboutUs-title">¿Qué es Yo Te Adopto?</h2>
+      <p class="aboutUs-desc">Texto sobre Yo Te Adopto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore id ipsam voluptatibus, nihil
         dolores dolorem a eaque, numquam laborum omnis aperiam sapiente tenetur, rerum suscipit cupiditate dicta soluta autem
         voluptates.
       </p>

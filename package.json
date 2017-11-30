@@ -1,0 +1,27 @@
+{
+  "name": "yoteadopto-ridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npm run http-serve ./src",
+    "http-serve": "http-serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramsesDeco/yoteadopto-ridge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramsesDeco/yoteadopto-ridge/issues"
+  },
+  "homepage": "https://github.com/ramsesDeco/yoteadopto-ridge#readme",
+  "dependencies": {
+    "http-serve": "^1.0.1"
+  }
+}

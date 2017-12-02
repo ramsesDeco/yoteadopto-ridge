@@ -25,7 +25,7 @@
 }
 
 .yta-menu_icon:before {
-  content: "\e900";
+  content: "\e902";
   color: #fff;
 }
 .yta-slide_icon-up-down:before {
@@ -33,6 +33,6 @@
   color: #fff;
 }
 .yta-yta_icon-white:before {
-  content: "\e902";
+  content: "\e900";
   color: #fff;
 }

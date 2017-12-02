@@ -36,3 +36,12 @@
   content: "\e900";
   color: #fff;
 }
+
+.yta-paw_print:before {
+  content: "\e903";
+}
+
+.yta-slide_icon:before {
+  content: "\e904";
+  color: #fff;
+}

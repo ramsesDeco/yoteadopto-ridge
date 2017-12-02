@@ -56,6 +56,10 @@
     font-weight: bold;
   }
 
+  h2 {
+    font-size: 32px;
+  }
+
   p {
     line-height: 1.3;
   }
@@ -143,6 +147,109 @@
     color: #fff;
   }
 
+  .adopt-title, .adopt-footer {
+    background-color: #ffc85e;
+    padding: 32px;
+    text-align: center;
+  }
+
+  .adopt-title h2 {
+    color: #553457;
+  }
+
+  .adopt-title i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .adopt-list{
+    display:flex;
+    overflow: hidden;
+  }
+
+  .adopt-card-image{
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .adopt-card-image.dog{
+    background-image: url(./img/dog.jpg);
+  }
+
+  .adopt-card-image.cat{
+    background-image: url(./img/cat.jpg);
+  }
+
+  .adopt-card-image.bunny{
+    background-image: url(./img/bunny.jpg);
+  }
+
+  .adopt-card:nth-child(odd){
+    background-color:#f06252;
+  }
+
+  .adopt-card:nth-child(even){
+    background-color:#553457;
+  }
+
+  .adopt-card-desc{
+    text-align: center;
+    color:white;
+    padding: 30px 20px 20px;
+  }
+
+  .adopt-card{
+    position:relative;
+  }
+
+  .adopt-card:first-child:after,
+  .adopt-card:last-child:after{
+    content:" ";
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+  }
+
+  .adopt-card:first-child{
+    margin-left: -50%;
+  }
+
+  .adopt-card:last-child{
+    margin-right: -50%;
+  }
+
+  .adopt-card-desc{
+    position:relative;
+  }
+
+  .adopt-card-paw{
+    position:absolute;
+    top:-20px;
+    left:0;
+    right:0;
+  }
+
+  .adopt-card-paw i{
+    font-size: 32px;
+    background-color: #553457;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .adopt-card-desc h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .adopt-footer i{
+    font-size:32px;
+  }
 </style>
 
 <body>
@@ -185,14 +292,10 @@
     <section class="aboutUs">
       <div class="aboutUs-containerImg">
         <picture class="aboutUs-img">
-          <img
-            src="./img/aboutus-img_2x.png"
-            srcset="./img/aboutus-img_1x.png,
+          <img src="./img/aboutus-img_2x.png" srcset="./img/aboutus-img_1x.png,
             ./img/aboutus-img_2x.png 2x,
             ./img/aboutus-img_3x.png 3x
-            "
-            alt=""
-          >
+            " alt="">
           <svg class="aboutUs-isologo">
             <image xlink:href="./img/isologo.svg" width="100%" height="100%" />
           </svg>
@@ -206,24 +309,53 @@
     </section>
 
     <section>
-      <h2>Busco un lugar, ¿Me adoptas?</h2>
-      <article>
-        <h3>Casimiro</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quam explicabo veritatis at fuga maiores cum laudantium?
-          Accusantium animi rem veritatis, sint sequi pariatur aliquid, consequuntur eius harum, neque maxime?</p>
-      </article>
+      <div class="adopt-title">
+        <i class="yta yta-yta_icon-white"></i>
+        <h2>Busco un lugar, ¿Me adoptas?</h2>
+      </div>
 
-      <article>
-        <h3>Felipe Gato</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quam explicabo veritatis at fuga maiores cum laudantium?
-          Accusantium animi rem veritatis, sint sequi pariatur aliquid, consequuntur eius harum, neque maxime?</p>
-      </article>
+      <div class="adopt-list">
+        <article class="adopt-card">
+          <div class="adopt-card-image dog"></div>
+          <div class="adopt-card-desc">
+            <div class="adopt-card-paw">
+              <i class="yta yta-paw_print"></i>
+            </div>
+            <h3>Casimiro</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quam explicabo veritatis at fuga maiores cum laudantium?
+              Accusantium animi rem veritatis, sint sequi pariatur aliquid, consequuntur eius harum, neque maxime?</p>
+          </div>
+        </article>
 
-      <article>
-        <h3>Conejo Benito</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur voluptates recusandae pariatur in quisquam
-          ab enim, rerum quis! Beatae eveniet reprehenderit qui nisi dignissimos eos omnis perferendis in, culpa a?</p>
-      </article>
+        <article class="adopt-card">
+            <div class="adopt-card-image cat"></div>
+            <div class="adopt-card-desc">
+              <div class="adopt-card-paw">
+                <i class="yta yta-paw_print"></i>
+              </div>
+              <h3>Felipe Gato</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quam explicabo veritatis at fuga maiores cum laudantium?
+                Accusantium animi rem veritatis, sint sequi pariatur aliquid, consequuntur eius harum, neque maxime?</p>
+            </div>
+          </article>
+
+          <article class="adopt-card">
+              <div class="adopt-card-image bunny"></div>
+              <div class="adopt-card-desc">
+                <div class="adopt-card-paw">
+                  <i class="yta yta-paw_print"></i>
+                </div>
+                <h3>Conejo Benito</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quam explicabo veritatis at fuga maiores cum laudantium?
+                  Accusantium animi rem veritatis, sint sequi pariatur aliquid, consequuntur eius harum, neque maxime?</p>
+              </div>
+            </article>
+
+      </div>
+      <div class="adopt-footer">
+        <i class="yta yta-slide_icon"></i>
+      </div>
+
     </section>
 
     <section>

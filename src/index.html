@@ -250,6 +250,43 @@
   .adopt-footer i{
     font-size:32px;
   }
+
+  .camp {
+    background-color: #f06252;
+    padding: 32px;
+    text-align: center;
+  }
+
+  .camp-title h2{
+    color: #ffc85e;
+    margin-top: 10px;
+  }
+
+  .camp-title i{
+    color:#553457;
+    font-size: 32px;
+  }
+
+  .camp-card {
+    color: white;
+  }
+
+  .camp-card-map {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+
+  .camp-card h3,
+  .camp-card h3 + time {
+    text-transform: uppercase;
+  }
+
+  .cmap-card address {
+    margin-bottom: 10px;
+  }
 </style>
 
 <body>
@@ -358,13 +395,17 @@
 
     </section>
 
-    <section>
-      <h2>Campañas de Vacunación</h2>
-      <article>
-        <h3>Antirrábica</h3>
+    <section class="camp">
+      <div class="class camp-title">
+        <i class="yta yta-paw_plus"></i>
+        <h2>Campañas de Vacunación</h2>
+      </div>
+      <article class="camp-card">
+        <div class="camp-card-map"></div>
+        <h3 class="camp-card-name">Antirrábica</h3>
         <time datetime="2017-11-18">Sábado 18 de Noviembre 2017</time>
         <address>
-          Palacio de las Mascotas
+          Palacio de las Mascotas <br />
           <time datetime="08:00">8:00 am</time>--
           <time datetime="15:00">3:00 pm</time>
         </address>

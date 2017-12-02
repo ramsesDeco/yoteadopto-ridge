@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1">
@@ -8,36 +9,35 @@
 <link rel="stylesheet" href="./styles/reset.css">
 <link rel="stylesheet" href="./styles/fonts.css">
 <style>
-
   @font-face {
     font-family: nunito;
-    src:  url('./fonts/nunito-light.eot');
-    src:  url('./fonts/nunito-light.eot') format('embedded-opentype'),
-      url('./fonts/nunito-light.ttf') format('truetype'),
-      url('./fonts/nunito-light.woff') format('woff'),
-      url('./fonts/nunito-light.svg') format('svg');
+    src: url('./fonts/nunito-light.eot');
+    src: url('./fonts/nunito-light.eot') format('embedded-opentype'),
+    url('./fonts/nunito-light.ttf') format('truetype'),
+    url('./fonts/nunito-light.woff') format('woff'),
+    url('./fonts/nunito-light.svg') format('svg');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: maaxRounded;
-    src:  url('./fonts/maax-rounded.eot');
-    src:  url('./fonts/maax-rounded.eot') format('embedded-opentype'),
-      url('./fonts/maax-rounded.ttf') format('truetype'),
-      url('./fonts/maax-rounded.woff') format('woff'),
-      url('./fonts/maax-rounded.svg') format('svg');
+    src: url('./fonts/maax-rounded.eot');
+    src: url('./fonts/maax-rounded.eot') format('embedded-opentype'),
+    url('./fonts/maax-rounded.ttf') format('truetype'),
+    url('./fonts/maax-rounded.woff') format('woff'),
+    url('./fonts/maax-rounded.svg') format('svg');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: maaxRounded;
-    src:  url('./fonts/maax-rounded-bold.eot');
-    src:  url('./fonts/maax-rounded-bold.eot') format('embedded-opentype'),
-      url('./fonts/maax-rounded-bold.ttf') format('truetype'),
-      url('./fonts/maax-rounded-bold.woff') format('woff'),
-      url('./fonts/maax-rounded-bold.svg') format('svg');
+    src: url('./fonts/maax-rounded-bold.eot');
+    src: url('./fonts/maax-rounded-bold.eot') format('embedded-opentype'),
+    url('./fonts/maax-rounded-bold.ttf') format('truetype'),
+    url('./fonts/maax-rounded-bold.woff') format('woff'),
+    url('./fonts/maax-rounded-bold.svg') format('svg');
     font-weight: bold;
     font-style: normal;
   }
@@ -46,40 +46,48 @@
     font-family: nunito;
   }
 
-  h1,h2,h3,h4,h5,h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: maaxRounded;
     font-weight: bold;
   }
 
-  p{
+  p {
     line-height: 1.3;
   }
 
-  body{
+  body {
     font-size: 16px;
   }
-  header{
-    position:fixed;
+
+  header {
+    position: fixed;
     top: 0;
-    left:0;
-    right:0;
-    padding: 2em 1.5em;
+    left: 0;
+    right: 0;
+    padding: 20px 16px;
     z-index: 1;
   }
-    header ul,header h2{
-      display:none;
-    }
 
-    header nav i:first-child{
-      font-size: 1.5em;
-    }
+  header ul,
+  header h2 {
+    display: none;
+  }
 
-    header nav i:last-child{
-      font-size: 1.85em;
-      float: right;
-    }
+  header nav i:first-child {
+    font-size: 20px;
+  }
 
-  .home{
+  header nav i:last-child {
+    font-size: 26px;
+    float: right;
+  }
+
+  .home {
     background-image: url('./img/bg-home_320.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,34 +97,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
-  }
-
-  .home svg{
-    width:180px;
-    height: 180px;
-  }
-
-  .home-down{
-    position:absolute;
-    bottom:1em;
-    font-size: 3em;
-  }
-
-  .aboutUs{
-    background-color: #f06252;
-    padding: 4em;
-  }
-
-  .aboutUs-containerImg{
-    text-align: center;
-  }
-
-  .aboutUs-img{
     position: relative;
   }
 
-  .aboutUs-isologo{
+  .home svg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-down {
+    position: absolute;
+    bottom: 40px;
+    font-size: 40px;
+  }
+
+  .aboutUs {
+    background-color: #f06252;
+    padding: 40px;
+  }
+
+  .aboutUs-containerImg {
+    text-align: center;
+  }
+
+  .aboutUs-img {
+    position: relative;
+  }
+
+  .aboutUs-isologo {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -124,70 +132,71 @@
     right: 0;
   }
 
-  .aboutUs-title{
+  .aboutUs-title {
     color: #553457;
-    font-size: 2em;
+    font-size: 32px;
     text-align: center;
-    margin: 0.7em 0 0.3em;
+    margin: 14px 0 5px;
   }
 
-  .aboutUs-desc{
+  .aboutUs-desc {
     color: #fff;
   }
 
-  </style>
+</style>
+
 <body>
-  <header >
-  <nav>
-    <h2>Menú de Navegación</h2>
-    <i class="yta yta-menu_icon"></i>
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">
-          <span>¿Que es Yo Te Adopto?</span>Acerca</a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Animales en Adopción</span>Adoptar</a>
-      </li>
-      <li>
-        <a href="#">Campañas</a>
-      </li>
-      <li>
-        <a href="#">Testimonio</a>
-      </li>
-    </ul>
-    <i class="yta yta-yta_icon-white"></i>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <i class="yta yta-menu_icon"></i>
+      <h2>Menú de Navegación</h2>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">
+            <span>¿Que es Yo Te Adopto?</span>Acerca</a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Animales en Adopción</span>Adoptar</a>
+        </li>
+        <li>
+          <a href="#">Campañas</a>
+        </li>
+        <li>
+          <a href="#">Testimonio</a>
+        </li>
+      </ul>
+      <i class="yta yta-yta_icon-white"></i>
+    </nav>
+  </header>
   <main>
     <section class="home">
-    <svg aria-labelledby="home-title home-desc">
-      <title id="home-title">Yo te adopto</title>
-      <desc id="home-desc">Hogares para nuestros amigos</desc>
-      <image xlink:href="./img/isologo.svg" width="100%" height:"100%"></image>
-    </svg>
-    <i class="home-down yta yta-slide_icon-up-down"></i>
+      <svg aria-labelledby="home-title home-desc">
+        <title id="home-title">Yo te adopto</title>
+        <desc id="home-desc">Hogares para nuestros amigos</desc>
+        <image xlink:href="./img/isologo.svg" width="100%" height: "100%"></image>
+      </svg>
+      <i class="home-down yta yta-slide_icon-up-down"></i>
     </section>
 
     <section class="aboutUs">
       <div class="aboutUs-containerImg">
         <picture class="aboutUs-img">
-          <img 
+          <img
+            src="./img/aboutus-img_2x.png"
             srcset="./img/aboutus-img_1x.png,
             ./img/aboutus-img_2x.png 2x,
-            ./img/aboutus-img_3x.png 3x,
+            ./img/aboutus-img_3x.png 3x
             "
-            src="./img/aboutus-img_2x.png"
             alt=""
           >
           <svg class="aboutUs-isologo">
             <image xlink:href="./img/isologo.svg" width="100%" height="100%" />
           </svg>
-        </picture> 
+        </picture>
       </div>
       <h2 class="aboutUs-title">¿Qué es Yo Te Adopto?</h2>
       <p class="aboutUs-desc">Texto sobre Yo Te Adopto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore id ipsam voluptatibus, nihil
@@ -263,4 +272,5 @@
     </footer>
   </main>
 </body>
+
 </html>

@@ -287,6 +287,42 @@
   .cmap-card address {
     margin-bottom: 10px;
   }
+
+  .testimony {
+    background-color: #f06252;
+    color: white;
+    text-transform: uppercase;text-align: center;
+    padding: 32px;
+  }
+
+  .testimony h2 {
+    position: fixed;
+    top: 100%;
+  }
+
+  .testimony blockquote {
+    max-width: 250px;
+    margin: 0 auto;
+    line-height: 1.4;
+    position: relative;
+  }
+
+  .testimony .testimony-quote:before,
+  .testimony .testimony-quote:after {
+    font-family: yta;
+    color: #ffc85e;
+  }
+  .testimony .testimony-quote:before {
+    content: "\e909";
+    position: absolute;
+    top: -20px;
+    left: -5px;
+  }
+  .testimony .testimony-quote:after {
+    content: "\e908";
+  }
+
+
 </style>
 
 <body>
@@ -413,6 +449,18 @@
           <abbr title="Peso Mexicano">MXN</abbr>
         </span>
       </article>
+    </section>
+
+    <section class="testimony">
+      <h2>Testimonios</h2>
+      <blockquote>
+        <div class="testimony-quote">
+          La grandeza de una nación y su progreso moral puede ser juzgado por la forma en que sus animales son tratados
+        </div>
+        <div>
+          <b>— <br /> Mahatma Gandhi</b>
+        </div>
+      </blockquote>
     </section>
 
     <footer>

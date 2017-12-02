@@ -24,6 +24,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.yta-JT_logo:before {
+  content: "\e906";
+  color: #432245;
+}
+.yta-KOC_logo:before {
+  content: "\e907";
+}
+.yta-qu_02:before {
+  content: "\e908";
+}
+.yta-qu_01:before {
+  content: "\e909";
+}
 .yta-paw_plus:before {
   content: "\e905";
 }
@@ -34,15 +47,45 @@
 .yta-paw_print:before {
   content: "\e903";
 }
-.yta-menu_icon:before {
+.yta-yta_icon-white:before {
   content: "\e900";
   color: #fff;
 }
-.yta-slide_icon-up-down:before {
+.yta-menu_icon:before {
   content: "\e901";
   color: #fff;
 }
-.yta-yta_icon-white:before {
+.yta-slide_icon-up-down:before {
   content: "\e902";
   color: #fff;
+}
+.yta-twitter:before {
+  content: "\e90a";
+}
+.yta-brand3:before {
+  content: "\e90a";
+}
+.yta-tweet:before {
+  content: "\e90a";
+}
+.yta-social3:before {
+  content: "\e90a";
+}
+.yta-instagram:before {
+  content: "\e90b";
+}
+.yta-brand2:before {
+  content: "\e90b";
+}
+.yta-social2:before {
+  content: "\e90b";
+}
+.yta-facebook:before {
+  content: "\e90c";
+}
+.yta-brand:before {
+  content: "\e90c";
+}
+.yta-social:before {
+  content: "\e90c";
 }

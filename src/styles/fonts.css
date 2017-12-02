@@ -24,8 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.yta-paw_plus:before {
+  content: "\e905";
+}
+.yta-slide_icon:before {
+  content: "\e904";
+  color: #fff;
+}
+.yta-paw_print:before {
+  content: "\e903";
+}
 .yta-menu_icon:before {
-  content: "\e902";
+  content: "\e900";
   color: #fff;
 }
 .yta-slide_icon-up-down:before {
@@ -33,15 +43,6 @@
   color: #fff;
 }
 .yta-yta_icon-white:before {
-  content: "\e900";
-  color: #fff;
-}
-
-.yta-paw_print:before {
-  content: "\e903";
-}
-
-.yta-slide_icon:before {
-  content: "\e904";
+  content: "\e902";
   color: #fff;
 }
